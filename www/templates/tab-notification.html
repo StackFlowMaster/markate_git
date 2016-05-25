@@ -1,0 +1,92 @@
+<ion-view class="tab_notification_page">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      My Account
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="padding">
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <p class="padding">UPDATE YOUR NOTIFICATION SETTIGNS</p>
+    </div>
+
+    <div class="row" style="">
+      <div class="col col-50">
+
+      </div>
+
+      <div class="col col-25">
+        Email
+      </div>
+
+      <div class="col col-25">
+        SMS
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-50">
+        <p class="padding">Service Updates</p>
+      </div>
+
+      <div class="col col-25">
+        <label class="checkbox checkbox-stable">
+          <input ng-model="noti_email" type="checkbox" ng-click="changeEmail(noti_email)">
+        </label>
+      </div>
+
+      <div class="col col-25">
+        <label class="checkbox checkbox-stable">
+          <input ng-model="noti_sms" type="checkbox" ng-click="changeSMS(noti_sms)">
+        </label>
+      </div>
+    </div>
+
+    <div class="row" style="">
+      <div class="col col-50">
+        <p class="padding">New Deals</p>
+      </div>
+
+      <div class="col col-25">
+        <label class="checkbox checkbox-stable">
+          <input ng-model="noti_deal" type="checkbox" ng-click="changeDeal(noti_deal)">
+        </label>
+      </div>
+
+      <div class="col col-25">
+      </div>
+    </div>
+
+    <div class="row" style="">
+      <div class="col col-50">
+        <p class="padding">Mailing List</p>
+      </div>
+
+      <div class="col col-25">
+        <label class="checkbox checkbox-stable">
+          <input ng-model="noti_mail" type="checkbox" ng-click="changeMail(noti_mail)">
+        </label>
+      </div>
+
+      <div class="col col-25">
+      </div>
+    </div>
+
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-dark btnSave" ng-click="goSave()">
+        SAVE
+      </button>
+    </div>
+  </div>
+
+</ion-view>

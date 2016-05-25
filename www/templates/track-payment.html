@@ -1,0 +1,81 @@
+<ion-view class="track_payment_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Track
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="" style="padding:0px 20px;">
+    <div class="list" style="margin-top:15px;">
+
+        <a class="item" href="">
+          <h4 class="progress">IN PROGRESS</h4>
+          <h2>JOB name #1 (<font style="font-size:12px; color:#646464;">#235648</font>)</h2>
+          <p style="color:#646464;">$ 900</p>
+          <button class="button button-dark" ng-click="openReviewModal(1)">PLAY</button>
+        </a>
+
+        <a class="item" href="">
+          <h4 class="completed">COMPLETED</h4>
+          <h2>JOB name #2 (<font style="font-size:12px; color:#646464;">#665989</font>)</h2>
+          <p style="color:#646464;">$ 125</p>
+          <button class="button button-dark" ng-click="openReviewModal(2)">PLAY</button>
+        </a>
+
+        <a class="item" href="">
+          <h4 class="completed">COMPLETED</h4>
+          <h2>JOB name #3 (<font style="font-size:12px; color:#646464;">#365214</font>)</h2>
+          <p style="color:#646464;">$ 550</p>
+          <button class="button button-dark" ng-click="openReviewModal(3)">PLAY</button>
+        </a>
+
+    </div>
+  </ion-content>
+
+</ion-view>
+
+<script id="templates/review.html" type="text/ng-template">
+  <ion-modal-view class="review padding" style="text-align:center;">
+    <div class="row" style="text-align:center;">
+      <h4 style="font-style:italic; margin: 20px auto; color:#002639;">Please review this pro</h4>
+    </div>
+
+    <div class="row">
+      <textarea class="txtReview" placeholder="Describe the strong and the weakparts of this pro.Be kind, this will show on his profile."></textarea>
+    </div>
+
+    <div class="rating_range">
+      <div class="row">
+          <rating ng-model="rating.rate" max="{{rating.max}}"></rating>
+      </div>
+
+      <div class="row">
+          <div class="item range">
+            <input type="range"  min="0" max="{{rating.max}}" step="0.1" ng-model="rating.rate" >
+          </div>
+      </div>
+    </div>
+
+    <div class="row" style="font-style:italic; text-align:center; display: inline-block;">
+      {{rating.rate}} +
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <button class="button button-block btnOkay" ng-click="goOkay()">
+        OK
+      </button>
+    </div>
+  </ion-modal-view>
+</script>
+
+
+
+
+

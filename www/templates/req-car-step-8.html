@@ -1,0 +1,141 @@
+<ion-view class="req_car_step_8_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Request a service
+    </div>
+
+    <a class="button button-icon button-clear icon ion-levels pull-right" id="btnFilter" nav-direction="swap" nav-transition="android" href="#/req-car-step-9" style="color:white;">
+    </a>
+
+    <!-- nav-transition : ios, android, and none -->
+    <!-- nav-direction: forward, back, enter, exit, swap -->
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader" style="background:#2bde73;">
+    <button class="button btnCompare" ng-click="goCompare()">
+      COMPARE
+    </button>
+
+    <div class="title" style="color:#f5f5f5; font-size:16px; font-style:italic;">
+      - 3 -
+    </div>
+
+    <button class="button button-outline btnEstimate" ng-click="goEstimate()">
+      GET ESTIMATE
+    </button>
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div class="list card pros_card" ng-repeat="pros in invite_pros">
+      <div class="item item-avatar">
+        <img ng-src="{{pros.url}}">
+        <h2>{{pros.name}}</h2>
+        <p>Service specialisation</p>
+
+        <ionic-ratings ratingsobj='ratingsObject' style="text-align:left;"></ionic-ratings>
+
+        <span class="loc">central/south valley</span>
+        <span class="loc">north valley</span>
+
+        <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked">
+          SELECTED
+        </ion-checkbox>
+      </div>
+
+      <div class="item item-body">
+        <div class="row text-center">
+          <span class="pros_iv iv_1 on">
+            licensed
+          </span>
+          <span class="pros_iv iv_2 on">
+            bonded
+          </span>
+          <span class="pros_iv iv_3 on">
+            insured
+          </span>
+          <span class="pros_iv iv_4 on">
+            acredited
+          </span>
+          <span class="pros_iv iv_5 on">
+            response
+          </span>
+          <span class="pros_iv iv_6 on">
+            since
+          </span>
+        </div>
+      </div>
+
+      <div class="item item-footer">
+        <div class="row">
+        <div class="col col-33 btnCall">
+          <span class="mk_icon ion-mk-call">Call</span>
+        </div>
+
+        <div class="col col-33 btnEmail">
+          <i class="mk_icon ion-mk-email">Email</i>
+        </div>
+
+        <div class="col col-33 btnChat">
+          <i class="mk_icon ion-mk-chat">Chat</i>
+        </div>
+      </div>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
+
+<script id="templates/estimate.html" type="text/ng-template">
+  <ion-modal-view class="estimate padding" style="text-align:center;">
+    <div class="row" style="color:#002639; text-align:center; display:block; margin-top:30px;">
+      Your Request <font style="color:red;">#00215</font>
+    </div>
+
+    <div class="row" style="color:#002639; text-align:center; display:block;">
+      notifified to following Professions.
+    </div>
+
+    <div class="row" style="color:#002639; text-align:center; display:block;">
+      They will contact you shortly with
+    </div>
+
+    <div class="row" style="color:#002639; text-align:center; display:block;">
+      Estimates.
+    </div>
+
+    <div class="row" style="text-align:center;">
+      <h4 style="font-style:italic; margin: 20px auto; color:#002639;">Invited Pros</h4>
+    </div>
+
+    <div class="list pros_list">
+      <div class="item item-avatar item-button-right" ng-repeat="item in estimate_data track by $index">
+        <img ng-src="{{item.pros_url}}">
+        <p>{{item.pros_name}}</p>
+        <button class="button button-small icon-left ion-ios-telephone btnProsCall" ng-click="goCall($index)">Call</button>
+      </div>
+    </div>
+
+    <div class="row" style="color:#002639; text-align:center; display:block; margin-top:30px;">
+      You can Track the Estimates
+    </div>
+
+    <div class="row" style="color:#2bde72; text-align:center; display:block; margin-bottom:30px;">
+      HERE
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <button class="button button-block btnOkay" ng-click="goOkay()">
+        OK
+      </button>
+    </div>
+  </ion-modal-view>
+</script>
+
+
+
+
+
+

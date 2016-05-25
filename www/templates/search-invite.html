@@ -1,0 +1,67 @@
+<ion-view class="search_invite_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Invite pro
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="padding">
+    <div class="text-center" style="padding: 10px 20px; color:#002639; font-style:italic;">
+      <div class="row" style="display:inline-block; font-size:16px;">
+        Invite "Alie Henge"
+      </div>
+      <br />
+      <div class="row" style="display:inline-block; font-size:16px;">
+        to estimate
+      </div>
+    </div>
+
+    <div class="text-center" style="padding: 10px 20px;">
+      <div class="row" style="display:inline-block;">
+        <img class="user_avatar" src="http://www.placeimg.com/100/100/people/0" width="70" height="70" />
+      </div>
+
+      <div class="row" style="display:inline-block; margin-bottom:30px;">
+        <strong>Matthew Bill</strong>
+      </div>
+
+      <div clas="row" ng-repeat="item in job_lists">
+        <ion-checkbox ng-model="item.checked" ng-checked="item.checked">
+          {{ item.text }}
+        </ion-checkbox>
+      </div>
+
+    </div>
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnInvite" ng-click="goInvite()">
+        INVITE PRO TO ESTIMATE
+      </button>
+    </div>
+
+    <div class="text-center" style="font-size:10px; line-height:10px;">
+      By clicking “INVITE PRO TO ESTIMATE” you agree to Markate’s
+    </div>
+
+    <div class="text-center" style="font-size:10px; line-height:10px; margin-bottom:15px;">
+      <font style="color:#2bde72;">Terms & Conditions</font> and <font style="color:#2bde72;">Privacy Policy</font>.
+    </div>
+  </div>
+
+
+</ion-view>
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<ion-view class="req_car_step_6_file_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Request a service
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader" style="background:#2bde73;">
+    <span class="sub_left_logo">
+    </span>
+
+    <div class="title" style="color:#f5f5f5; font-size:14px;">
+      CARPENTRY - ROUGH
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div style="padding: 0px 30px;">
+      <div class="row" style="text-align:center;">
+        <h4 style="font-style:italic; margin: 20px auto; color:#002639;">Access your camera</h4>
+      </div>
+
+      <div class="list file_list">
+        <div class="item item-button-right" ng-repeat="item in data track by $index">
+          {{item.file_name}}
+          <button class="button icon ion-ios-close" ng-click="goDelete($index)"></button>
+        </div>
+      </div>
+
+      <div class="row" style="text-align:center;">
+        <button class="button icon ion-plus-round btnPlus" ng-click="goAddFile()"></button>
+      </div>
+
+    </div>
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnSave" ng-click="goSave()">
+        NEXT STEP
+      </button>
+    </div>
+  </div>
+
+</ion-view>
+
+
+
+
+
+
+
+
+
+

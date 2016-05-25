@@ -1,0 +1,66 @@
+<ion-view class="req_car_step_3_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Request a service
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader" style="background:#2bde73;">
+    <span class="sub_left_logo">
+    </span>
+
+    <div class="title" style="color:#f5f5f5; font-size:14px;">
+      CARPENTRY - ROUGH
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div style="padding: 0px 30px;">
+      <div class="row" style="text-align:center;">
+        <h4 style="font-style:italic; margin: 20px auto; color:#002639;">I want to hire by:</h4>
+      </div>
+
+      <div clas="row" ng-repeat="item in car_step_3">
+        <ion-checkbox ng-model="item.checked" ng-checked="item.checked">
+          {{ item.text }}
+        </ion-checkbox>
+      </div>
+      <!-- http://ngcordova.com/docs/plugins/datePicker/ -->
+      <!-- https://github.com/rajeshwarpatlolla/ionic-datepicker -->
+      <!-- http://www.gajotres.net/must-have-plugins-for-ionic-framework/ -->
+      <div class="row" style="margin-top:20px;">
+        <div class="col col-50">
+            FROM
+            <input type="date" placeholder="mm/dd/yyyy" ng-model="fromDate">
+        </div>
+
+        <div class="col col-50">
+            TO
+            <input type="date" placeholder="mm/dd/yyyy" ng-model="endDate">
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnSave" ng-click="goSave()">
+        NEXT STEP
+      </button>
+    </div>
+  </div>
+
+</ion-view>
+
+
+
+
+

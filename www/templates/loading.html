@@ -1,0 +1,45 @@
+<ion-view class="loading_page" ng-init="loading_progress()">
+  
+  <!--ion-header-bar class="header_bar">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="h1 title">
+      Loading
+    </div>
+
+    <button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button>
+	
+  </ion-header-bar-->
+
+  <ion-content style="" scroll="false">
+
+    <div class="list logo">
+    </div>
+
+	<div class="col col-80 col-offset-10 loading_bar">
+		<span class="loading_pos" ng-style="loading_pos_style"></span>
+	</div>
+
+	<div class="col col-80 col-offset-10 loading_text center" ng-show="show_proc">
+		<i>Enough.</i><span>Hire a Pro!</span>
+	</div>
+
+    <!--div class="row" style="margin-top: 100px;">
+      <div class="col col-offset-10 col-80">
+        <button class="button button-full button-dark" ng-click="goRadius()">
+          Radius
+        </button>
+      </div>
+    </div>
+	
+    <div class="row">
+      <div class="col col-offset-10 col-80">
+        <button class="button button-full button-dark" ng-click="goSource()">
+          Source
+        </button>
+      </div>
+    </div-->
+  </ion-content>
+</ion-view>

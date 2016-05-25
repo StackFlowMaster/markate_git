@@ -1,0 +1,85 @@
+<ion-view class="tab_account_page">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      My Account
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="padding">
+      <div class="row">
+        <div class="col col-20" style="text-align:center;">
+          <button class="button icon ion-ios-world-outline btnView" ng-click="goView()">VIEW</button>
+        </div>
+        <div class="col col-60" style="text-align:center;">
+          <img class="avatar" src="img/avatar.png" width="130" height="130" />
+        </div>
+        <div class="col col-20" style="text-align:center;">
+          <button class="button icon ion-settings btnEdit" ng-click="goEdit()">EDIT</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Public URL</span>
+          <input type="text" placeholder="" ng-model="account.url">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Full name</span>
+          <input type="text" placeholder="" ng-model="account.name">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="" ng-model="account.email">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Full Mobile Phone</span>
+          <input type="text" placeholder="" ng-model="account.phone">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Address</span>
+          <input type="text" placeholder="" ng-model="account.address">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Zip</span>
+          <input type="text" placeholder="" ng-model="account.zip">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">About Me - short presentation</span>
+          <textarea class="txtAboutMe" placeholder="Characters left:2000" ng-model="account.aboutme">
+          </textarea>
+        </label>
+      </div>
+
+      <div class="row">
+        <button class="button button-dark btnSave" ng-click="goSave()">
+          SAVE
+        </button>
+      </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,7 @@
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  .ipad-landscape { color: blue; } /* your css rules for ipad landscape */
+
+	.start_page .slide_box.box1 {
+	    background-size: 100% auto;
+	}
+}

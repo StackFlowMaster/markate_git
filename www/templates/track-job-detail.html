@@ -1,0 +1,120 @@
+<ion-view class="track_job_detail_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Track
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div style="padding:20px 10px; border:1px solid #d6d6d6;">
+      <div class="row" style="display:inline-block;">
+        <h4 style="float:left; margin:0px;">NAME of the Job</h4>
+        <p style="float:right; color:#8bba00;">IN PROGRESS</p>
+      </div>
+
+      <div class="row" style="display:inline-block; color:#646464;">
+        <div style="float:left;">
+          <i class="icon ion-close-circled" style="color:#bbbbbb; margin-right:10px;"></i>
+          Cancel request
+        </div>
+
+        <div style="float:right; color:#646464;">
+          <strong>29 May 2016</strong>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="http://www.placeimg.com/50/50/people/0" width="30" height="30" style="border-radius:50%; float:left;" />
+        <p style="line-height: 30px; margin-left: 10px;">Name of Pro</p>
+      </div>
+
+      <div id="map" data-tap-disabled="true"></div>
+    </div>
+
+    <div style="padding : 10px 30px; background-color:#fff;">
+      TYPES OF SERVICES:
+    </div>
+
+    <div style="padding : 10px 30px; background-color:#f5f5f5;">
+      <div class="row" style="font-size:10px;">
+        - Install New Garage Doors
+      </div>
+      <div class="row" style="font-size:10px;">
+        - Overhead Garage Doors Installation
+      </div>
+      <div class="row" style="font-size:10px;">
+        - Repair Bent Tracks & Rollers
+      </div>
+      <div class="row" style="font-size:10px;">
+        - Repair or Replace Electric Openers
+      </div>
+
+    </div>
+
+    <div style="padding : 10px 30px; background-color:#fff;">
+      DETAILS:
+    </div>
+
+    <div style="padding : 10px 30px; background-color:#f5f5f5;">
+      <div class="row" style="display:inline-block; border-bottom:1px solid #d6d6d6;">
+        <p style="float:left;"><strong>Zip Code.:</strong></p>
+        <p style="float:right;">85001</p>
+      </div>
+
+      <div class="row" style="display:inline-block; margin-top:10px; border-bottom:1px solid #d6d6d6;">
+        <p style="float:left;"><strong>Area:</strong></p>
+        <p style="float:right;">East valley</p>
+      </div>
+
+      <div class="row" style="display:inline-block; margin-top:10px; border-bottom:1px solid #d6d6d6;">
+        <p style="float:left;"><strong>Budget:</strong></p>
+        <p style="float:right;">$500</p>
+      </div>
+
+      <div class="row" style="display:inline-block; margin-top:10px; border-bottom:1px solid #d6d6d6;">
+        <p style="float:left;"><strong>Hire by:</strong></p>
+        <p style="float:right;">I'm flexible on dates</p>
+      </div>
+
+      <div class="row" style="display:inline-block; margin-top:10px; border-bottom:1px solid #d6d6d6;">
+        <p style="float:left;"><strong>Service type:</strong></p>
+        <p style="float:right;">Resiential</p>
+      </div>
+
+      <div class="row" style="display:inline-block; margin-top:10px;">
+        <p style="float:left;"><strong>Verified:</strong></p>
+        <p style="float:right;">G</p>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnComplete" ng-click="goComplete()">
+        COMPLETE
+      </button>
+    </div>
+
+    <div class="row">
+      <button class="button button-block btnHalt" ng-click="goHalt()">
+        HALT
+      </button>
+    </div>
+
+  </div>
+
+</ion-view>
+
+
+
+
+

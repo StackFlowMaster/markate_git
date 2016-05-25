@@ -1,0 +1,232 @@
+<ion-view class="search_detail_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Search pros
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="">
+
+    <div class="pros_card">
+      <div class="item item-avatar">
+        <img ng-src="{{pros.url}}">
+        <h2>{{pros.name}}</h2>
+
+        <ionic-ratings ratingsobj='ratingsObject' style="text-align:left;"></ionic-ratings>
+
+        <p>Service specialisation</p>
+
+        <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked" ng-click="goInvite()">
+          INVITE
+        </ion-checkbox>
+
+        <div class="btnMoreInfo" ng-click="goMoreInfo()">
+          More info
+        </div>
+
+      </div>
+
+      <div class="item item-footer">
+        <div class="row">
+          <div class="col col-33 btnCall">
+            <span class="mk_icon ion-mk-call">Call</span>
+          </div>
+
+          <div class="col col-33 btnEmail">
+            <i class="mk_icon ion-mk-email">Email</i>
+          </div>
+
+          <div class="col col-33 btnChat">
+            <i class="mk_icon ion-mk-chat">Chat</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="!bMoreInfo">
+      <div class="detail_header">
+        BUSINESS CREDENTIALS
+      </div>
+
+      <div class="detail_body">
+        <div class="row text-center">
+          <span class="pros_iv iv_1 on">
+            licensed
+          </span>
+          <span class="pros_iv iv_2 off">
+            bonded
+          </span>
+          <span class="pros_iv iv_3 on">
+            insured
+          </span>
+        </div>
+
+        <div class="row text-center">
+          <span class="pros_iv iv_4 off">
+            acredited
+          </span>
+          <span class="pros_iv iv_5 on">
+            response
+          </span>
+          <span class="pros_iv iv_6 on">
+            since
+          </span>
+        </div>
+      </div>
+
+      <div class="detail_header">
+        ABOUT
+      </div>
+
+      <div class="detail_body">
+        <div class="row">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh nisl, tincidunt eu tortor vel, cursus pretium risus. Fusce a sagittis arcu. Quisque ac massa sed nulla cursus sagittis a fermentum felis. Cras nec finibus justo. Quisque viverra, mauris eget auctor congue, diam ante condimentum eros, sed pharetra erat lorem sed metus.</p>
+        </div>
+      </div>
+
+      <div class="detail_header">
+        PICTURES(14 PICTURES)
+      </div>
+
+      <div class="detail_body" style="padding :0px;">
+        <ion-scroll direction="x" class="profile_gallery">
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/0"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/1"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/2"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/3"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/4"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/5"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/6"/>
+          <img class="pro_img" src="http://www.placeimg.com/100/80/any/7"/>     
+        </ion-scroll>
+      </div>
+
+      <div class="detail_header">
+        REVIEWS
+      </div>
+
+      <div class="detail_body" style="padding :0px;">
+        <div  ng-repeat="r in reviews" class="review_cube"  ng-class-odd="'odd'" ng-class-even="'even'">
+          <div class="row">
+            <div class="col col-50"><strong>{{r.name}}</strong></div>
+            <div clsss="col col-50" class="rating_cube"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+          </div>
+          <div class="row" style="padding:10px;">
+            {{r.review}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="bMoreInfo">
+      <div class="detail_header">
+        VERIFICATIONS:
+      </div>
+
+      <div class="detail_body">
+        <div class="row">
+          <div class="col col-4" style="text-align:center;">
+            <i class="icon ion-ios-telephone" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 10px; color:#bbbbbb;"></i>
+          </div>
+
+          <div class="col col-4" style="text-align:center;">
+            <i class="icon ion-android-mail" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 7px; color:#fff; background-color:#002639;"></i>
+          </div>
+
+          <div class="col col-4" style="text-align:center;">
+            <i class="icon ion-social-facebook" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 14px; color:#bbbbbb;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail_header">
+        SERVICES OFFERED:
+      </div>
+
+      <div class="detail_body" style="color: #202020;">
+        <div class="row"><strong>Residential:</strong></div>
+
+        <div class="row">
+          <span class="detail_tag">Cleaning</span>
+          <span class="detail_tag">Concrete</span>
+          <span class="detail_tag">Drywall</span>
+        </div>
+
+        <div class="row" style="margin-top:10px;"><strong>Commercial:</strong></div>
+
+        <div class="row">
+          <span class="detail_tag">Fire protection</span>
+          <span class="detail_tag">Garage protection</span>
+          <span class="detail_tag">Drywall</span>
+        </div>
+      </div>
+
+      <div class="detail_header">
+        AVAILABILITY:
+      </div>
+
+      <div class="detail_body">
+
+        <div style="text-align:right; width:100%; padding: 5px 10px;">
+          <span style="float:left;"><strong>Working days:</strong></span>
+          <span style="">Mon, Tue, Wed, Sat</span>
+        </div>
+      </div>
+
+      <div class="detail_header">
+        SERVICES OFFERED:
+      </div>
+
+      <div class="detail_body">
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>Business name:</strong></span>
+          <span style="">Alie Heng.</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>Phone:</strong></span>
+          <span style="">222-567-1234</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>E-mail:</strong></span>
+          <span style="">alie@markate.com</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>Business location:</strong></span>
+          <span style="">Concho, AZ</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>Customer ratings:</strong></span>
+          <span style="">No reviews yet</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 10px;">
+          <span style="float:left;"><strong>Business since:</strong></span>
+          <span style="">2009</span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+

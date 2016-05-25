@@ -1,0 +1,68 @@
+<ion-view class="req_car_step_1_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Request a service
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader" style="background:#2bde73;">
+    <span class="sub_left_logo" style="display:inline-block;">
+    </span>
+
+    <div class="title" style="color:#f5f5f5; font-size:14px;">
+      CARPENTRY - ROUGH
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div class="row padding" style="background-color:#2bde73; border-top:1px solid #f5f5f5;">
+      <label class="item item-input" style="width: 100%; border-radius:10px; background: #dffaea; border: none;">
+        <i class="icon ion-ios-location placeholder-icon" style="color:black; font-size:1.5em;"></i>
+        <input type="text" class="search_key" ng-model="search" placeholder="Enter Zipcode">
+      </label>
+    </div>
+
+    <div style="padding: 0px 30px;">
+      <div class="row" style="text-align:center;">
+        <h4 style="font-style:italic; margin: 0px auto 20px; color:#002639;">Need help at:</h4>
+      </div>
+
+      <div class="row" style="text-align:center;">
+        <p style="margin: 0px auto 20px; color:#2bde73;">You can select one or multiple options.</p>
+      </div>
+
+      <div clas="row" ng-repeat="item in car_step_1">
+        <ion-checkbox ng-model="item.checked" ng-checked="item.checked">
+          {{ item.text }}
+        </ion-checkbox>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+    </div>
+
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnSave" ng-click="goSave()">
+        NEXT STEP
+      </button>
+    </div>
+  </div>
+
+</ion-view>
+
+
+
+
+

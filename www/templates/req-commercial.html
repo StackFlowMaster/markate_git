@@ -1,0 +1,59 @@
+<ion-view class="req_tab_commercial">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Request a service
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader" style="height: 64px; border: 0 none; margin-top: 90px; padding: 0px;">
+    <div class="row padding" style="background-color:#2bde73;">
+      <label class="item item-input" style="width: 100%; border-radius:10px;">
+        <i class="icon ion-search placeholder-icon" style="color:black; font-size:1.5em;"></i>
+        <input type="text" class="search_key" ng-model="search" placeholder="Search for service">
+      </label>
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div class="service_cate_box padding">
+      <div class="row" style="text-align:center;">
+        <h4 style="font-style:italic; margin: 12px auto 22px; color:#002639;">Looking for commercial service in:</h4>
+      </div>
+
+      <div class="row service_cate" collection-repeat="item in search_lists | orderBy:'id' | searchServices:search">
+        <a class="" href="#/req-car-step-1">
+          <img ng-src="{{item.image}}" width="50" height="50">
+          <span>{{item.service}}</span>
+        </a>
+      </div>
+
+      <!--div class="row service_cate">
+        <a class="" href="#">
+          <img src="img/r_home_2.png" width="50" height="50">
+          <span>CARPENTRY - ROUGH</span>
+        </a>
+      </div>
+
+      <div class="row service_cate">
+        <a class="" href="#">
+          <img src="img/r_home_5.png" width="50" height="50">
+          <span>HANDYMAN</span>
+        </a>
+      </div-->
+
+    </div>
+
+  </ion-content>
+</ion-view>
+
+
+
+
+

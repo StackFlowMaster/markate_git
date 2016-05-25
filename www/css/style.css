@@ -1,0 +1,3858 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, fieldset, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    /*color: white;*/
+}
+
+.center{
+    text-align:center;
+}
+
+i {
+	font-style: italic !important;
+}
+
+
+.ylue {
+	color: #2bde72;
+}
+
+
+.error {
+    color: #f00;
+}
+
+/******* Loading Page ********/
+
+.loading_page {
+    background-image: url("../img/loading.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #012839;
+	color: white;
+}
+
+.loading_page .logo {
+	margin-top: 250px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: 200px auto;
+    background-position: center;
+    width: 100%;
+    height: 46px;
+}
+
+.loading_page .loading_bar {
+    background-color: #ffffff;
+    height: 1px;
+
+    padding: 0;
+    width: 100%;
+}
+
+.loading_page .loading_pos {
+    background-color: #2ddb7a;
+    display: inline-flex;
+    height: 5px;
+    position: relative;
+    top: -12.5px;
+    width: 30%;
+}
+
+.loading_page .loading_text {
+	margin-top: 10px;
+}
+
+.loading_page .loading_text > * {
+	font-size: 24px !important;
+}
+
+/******* Start Page ********/
+
+.start_page {
+	background-color: #012839;
+	color: white;
+}
+
+.start_page .slider {
+	height: 100%;
+}
+
+.start_page .row {
+	text-align: center;
+	display: inline-block;
+}
+
+.start_page .slide_box {
+	height: 100%;
+	padding-top: 84%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.start_page .slide_box.box1 {
+    background-image: url("../img/slide1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.start_page .slide_box.box2 {
+    background-image: url("../img/slide2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
+
+.start_page .slide_box.box3 {
+    background-image: url("../img/slide3.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.start_page .slider-pager-page {
+	margin-left: 5px;
+	margin-right: 5px;
+	opacity: 1;
+	color: white;
+}
+
+.start_page .slider-pager-page.active .ion-record:before {
+	color: #2ddb7a;
+}
+
+.start_page .ion-record:before {
+  content: "";
+  font-size: 24px;
+}
+
+.start_page .login_box {
+	position:absolute;
+	bottom: 35px;
+	width: 100%;
+}
+
+.start_page .button {
+	min-height: 45px !important;
+	line-height: 32px;
+	font-weight: bolder;
+}
+
+.start_page .button.btnLogin {
+	border: 2px solid #2ADE73;
+	margin-top: 10px;
+	background: #012839;
+	color: #2ADE73;
+}
+
+/******* login Page ********/
+
+.login_page {
+    background-image: url("../img/bk1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #012839;
+	color: white;
+}
+
+.login_page .bar-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.login_page .bar-header button {
+	color: #2ADE73;
+}
+
+.login_page ion-content {
+	padding: 10px 20px;
+}
+
+.login_page .bottom_bar {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+	padding: 0px 30px;
+}
+
+.login_page .bottom_bar .row {
+	text-align:center; 
+	display:inline-block; 
+	padding:0px;
+}
+
+
+/******** Common ********/
+
+.button.btnFacebook, .button.btnFacebook:active, .button.btnFacebook:focus {
+	background-color: #3D5998;
+	color: white;
+	width: 100%;
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 19px;
+}
+
+.button.btnGoogle, .button.btnGoogle:active, .button.btnGoogle:focus {
+	background-color: #AF120B;
+	color: white;
+	width: 100%;
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 19px;
+}
+
+i.facebook {
+	background: url("../img/facebook.png") no-repeat;
+	background-size: 100% 100%;
+	width: 20px;
+    height: 30px;
+    float: right;
+    margin-top: 7px;
+    margin-right: 18px;
+}
+
+i.google {
+	background: url("../img/google.png") no-repeat;
+	background-size: 100% 100%;
+	width: 47px;
+    height: 30px;
+    float: right;
+    margin-top: 7px;
+}
+
+.button.btnEmail, .button.btnEmail:active, .button.btnEmail:focus {
+ 	border-bottom : 1px solid #7bc623; 
+ 	border-top: 1px solid #7bc623;
+ 	background-color: transparent;
+ 	color: white;
+ 	width: 100%;
+ 	border-radius: 0px;
+ 	text-align: left;
+ 	margin-top: 5px;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+i.email {
+	background: url("../img/email.png") no-repeat;
+	background-size: 100% 100%;
+	width: 15px;
+    height: 11px;
+    float: left;
+    margin: 17px;
+    margin-left: 0px;
+}
+
+/******* signup Page ********/
+
+.signup_page {
+    background-image: url("../img/bk1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #012839;
+	color: white;
+}
+
+.signup_page .bar-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.signup_page .bar-header button {
+	color: #2ADE73;
+}
+
+.signup_page ion-content {
+	padding: 10px 20px;
+}
+
+/******* Login Extend Page ********/
+
+.loginex_page {
+    background-image: url("../img/bk1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #012839;
+
+	color: white;
+}
+
+.loginex_page .bar-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.loginex_page .bar-header button {
+	color: #2ADE73;
+}
+
+.loginex_page ion-content {
+	padding: 10px 20px;
+}
+
+.loginex_page .bottom_bar {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+	padding: 0px 30px;
+}
+
+.loginex_page .bottom_bar .row {
+	text-align:center; 
+	display:inline-block; 
+	padding:0px;
+}
+
+.loginex_page .button.btnLogin {
+	border: 2px solid #2ADE73;
+	margin-top: 10px;
+	background: #012839;
+	color: #2ADE73;
+	width: 100%;
+}
+
+.loginex_page .form label.item {
+    background: transparent;
+    border: 0px;
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1px solid #7bc623;
+}
+
+.loginex_page .form label.item i {
+    margin: 0px 14px;
+    color: white;
+}
+
+.loginex_page .form label.item input {
+	color: white;
+}
+
+/******* Signup Extend Page ********/
+
+.singupex_page {
+    background-image: url("../img/bk1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #012839;
+
+	color: white;
+}
+
+.singupex_page .bar-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.singupex_page .bar-header button {
+	color: #2ADE73;
+}
+
+.singupex_page ion-content {
+	padding: 10px 20px;
+}
+
+.singupex_page .bottom_bar {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+	padding: 0px 30px;
+}
+
+.singupex_page .bottom_bar .row {
+	text-align:center; 
+	display:inline-block; 
+	padding:0px;
+}
+
+.singupex_page .button.btnSignup {
+	width: 100%;
+}
+
+.singupex_page .form label.item {
+    background: transparent;
+    border: 0px;
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1px solid #7bc623;
+}
+
+.singupex_page .form label.item i {
+    margin: 0px 14px;
+    color: white;
+}
+
+.singupex_page .form label.item input {
+	color: white;
+}
+
+/******* Forgot Page ********/
+
+.forgot_page {
+	background: #012839 url("../img/bk1.png") no-repeat scroll 0 0 / 100% 100%;
+	color: white;
+}
+
+.forgot_page .bar-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.forgot_page .bar-header button {
+	color: #2ADE73;
+}
+
+.forgot_page ion-content {
+	padding: 10px 20px;
+}
+
+.forgot_page .bottom_bar {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+	padding: 0px 30px;
+	width: 100%;
+}
+
+.forgot_page .bottom_bar .row {
+	text-align:center;
+	display:inline-block; 
+	padding:0px;
+}
+
+.forgot_page .button.btnSend {
+	border: 2px solid #2ADE73;
+	margin-top: 10px;
+	background: #012839;
+	color: #2ADE73;
+	width: 100%;
+}
+
+.forgot_page .form label.item {
+    background: transparent;
+    border: 0px;
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1px solid #7bc623;
+}
+
+.forgot_page .form label.item i {
+    margin: 0px 14px;
+    color: white;
+}
+
+.forgot_page .form label.item input {
+	color: white;
+}
+
+/******* Home Page ********/
+
+.home_page {
+	background: #002639;
+	color: #22333B;
+}
+
+.home_page .bar-header {
+    background-color: #002639 !important;
+    background-image: none;
+    border-bottom: 0px;
+}
+
+.home_page .bar-header button {
+	color: #2ADE73;
+}
+
+.home_page ion-content {
+	padding: 0px;
+}
+
+.home_page .logo {
+
+    background-image: url("../img/f_logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+
+	width: 80px;
+	height: 70px;
+	margin: 10px auto 0px auto;
+    display: inline-block
+}
+
+.home_page .box_menu {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	padding: 0px;
+}
+
+.home_page .box_menu .row {
+	margin : 0px;
+	padding : 0px;
+}
+
+.home_page .box_menu .row .box_cube {
+    height: 190px;
+    background: #fff;
+    color: #002639;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 15px;
+}
+
+.home_page .box_menu .box_cube.btnRequest {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: url("../img/f_service.png");
+    background-origin: padding-box;
+    background-position: center 65px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+.home_page .box_menu .box_cube.btnDeal {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: url("../img/f_deals.png");
+    background-origin: padding-box;
+    background-position: center 65px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+.home_page .box_menu .box_cube.btnSearch {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: url("../img/f_search.png");
+    background-origin: padding-box;
+    background-position: center 65px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+.home_page .box_menu .box_cube.btnTrack {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: url("../img/f_track.png");
+    background-origin: padding-box;
+    background-position: center 65px;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+.home_page .box_menu .btnEmergency {
+    background: #b20000;
+    text-align: center;
+    height: 55px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 53px;
+    color: white;
+}
+
+/******* Emergency Page ********/
+
+.emergency_page {
+	color: #22333B;
+}
+
+.emergency_page .bar-header {
+    background-color: #002639 !important;
+    background-image: none;
+    border-bottom: 3px solid #2ADE73;
+}
+
+.emergency_page .bar-header .title {
+    color: white;
+}
+
+.emergency_page .bar-header button {
+	color: #2ADE73;
+}
+
+.emergency_page ion-content {
+    background: url("../img/bk2.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+	padding: 10px 20px;
+}
+
+.button.btnEmergency, .button.btnEmergency:active, .button.btnEmergency:focus {
+	background-color: #b20000;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 19px;
+}
+
+.emergency_page .form label.item {
+    background: transparent;
+    border: 0px;
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1px solid #2cde74;
+}
+
+.emergency_page .form label.item i {
+    margin: 0px 14px;
+    color: #b20000;
+}
+
+.emergency_page .form label.item input {
+	color: #002639;
+}
+
+.emergency_page .button.btnSend {
+	margin-top: 10px;
+	background: #002639;
+	color: white;
+	width: 100%;
+}
+
+.emergency_page .txtProblem {
+	z-index:2;
+	width: 100%;
+	height: 100px;
+	border:1px solid #2cde74; 
+	border-radius:5px; 
+	padding : 10px; 
+	font-size : 14px;
+}
+
+/********** side menu ************/
+
+ion-side-menu ion-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ion-side-menu.menu .bar.bar-stable {
+	background-image: none;
+	background-color: white;
+	border: none;
+}
+
+ion-side-menu.menu .bar-stable .button.button-clear {
+	color: #2ADE73;
+}
+
+ion-side-menu.menu .menu_title {
+    color: black;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ion-side-menu.menu .list .item {
+    border: 1px solid #d6d6d6;
+    border-width: 1px 0px 1px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+ion-side-menu.menu .list .item.item-icon-right .icon {
+    color: black;
+}
+
+/********* Tab Style **********/
+
+ion-content.has-tabs-top {
+    top: 115px;
+}
+
+.tabs-top > .tabs, .tabs.tabs-top {
+	height: 70px;
+}
+
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+	height: 70px;
+	padding: 10px;
+	background-color: white;
+	color: black;
+	border-top: 3px solid #a3a3a3 !important;
+	max-width: none;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.tabs-color-active-positive .tab-item.activated {
+	background: #a3a3a3;
+	color: white;
+
+}
+
+/********* Tab Account Page *********/
+
+.tab_account_page {
+	background: #f5f5f5;
+}
+
+.tab_account_page .bar-header {
+    background-color: #404040;
+    background-image: none;
+    border-bottom: 0px;
+    color: white;
+}
+
+.tab_account_page .bar-header button {
+	color: white;
+}
+
+.tab_account_page .btnView,
+.tab_account_page .btnEdit {
+	font-size: 12px;
+	line-height: 20px;
+	width: 60px;
+	background-color: #f5f5f5;
+	margin-top: 50px;
+}
+
+.tab_account_page .button.icon::before {
+	line-height: 20px;
+}
+
+.tab_account_page .item-stacked-label {
+	border: none;
+	width: 100%;
+	padding-left: 0px;
+}
+
+.tab_account_page .item-stacked-label .input-label, .tab_account_page .item-stacked-label .icon {
+    display: inline-block;
+    padding: 4px 0 4px 20px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.tab_account_page .item-stacked-label input {
+	border: 1px solid #d6d6d6;
+    background: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab_account_page .txtAboutMe {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #d6d6d6;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tab_account_page .button.btnSave {
+    margin-top: 10px;
+    background: #404040;
+    color: white;
+    width: 100%;
+}
+
+/********* Tab Notification Page *********/
+
+.tab_notification_page {
+	background: #f5f5f5;
+}
+
+.tab_notification_page .bar-header {
+    background-color: #404040;
+    background-image: none;
+    border-bottom: 0px;
+    color: white;
+}
+
+.tab_notification_page .bar-header button {
+	color: white;
+}
+
+.tab_notification_page .bottom_bar {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+
+.tab_notification_page .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+}
+
+.tab_notification_page .button.btnSave {
+    background: #404040;
+    color: white;
+    width: 100%;
+}
+
+/********* Tab Profile Page *********/
+
+.tab_profile_page {
+	background: #f5f5f5;
+}
+
+.tab_profile_page .bar-header {
+    background-color: #404040;
+    background-image: none;
+    border-bottom: 0px;
+    color: white;
+}
+
+.tab_profile_page .bar-header button {
+	color: white;
+}
+
+.tab_profile_page .button.btnSave {
+    background: #404040;
+    color: white;
+    width: 100%;
+}
+
+.tab_profile_page .avatar {
+    border-radius: 50%;
+}
+
+.tab_profile_page .ionic_ratings {
+    text-align: left;
+}
+
+.tab_profile_page .ionic_ratings .icon {
+    font-size: 20px;
+}
+
+.tab_profile_page .btnMore {
+    border: 1px solid #a3a3a3;
+    padding: 0 20px;
+}
+
+.tab_profile_page .btnEdit {
+    background-color: #002639;
+    color: white;
+    text-align: center !important;
+    height: 46px;
+}
+
+.tab_profile_page .btnEmergency {
+    background: #002639;
+    text-align: center;
+    height: 55px;
+    width: 100%;
+    font-size: 28px;
+    line-height: 53px;
+    color: #2bde73;
+}
+
+
+.tab_profile_page .btnEdit icon {
+    color: #2bde73;
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+.tab_profile_page .btnEdit span {
+    margin-top: -15px;
+    display: inline-flex;
+}
+
+/********* Request Service Tabs **********/
+
+.req_nav_view {
+
+}
+
+.req_nav_view .bar-header {
+    background-color: #002639 !important;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_nav_view .bar-header button {
+    color: #2ADE73;
+}
+
+/********* Request Service Tabs **********/
+
+.req_tabs.tabs-top > .tabs, .tabs.tabs-top {
+    border: medium none;
+    height: 92px;
+}
+
+.tabs-icon-top.req_tabs > .tabs .tab-item {
+    height: 92px;
+    padding: 10px;
+    background-color: white;
+    color: #545454;
+    border-top: 3px solid #2bde73 !important;
+    max-width: none;
+}
+
+.req_tabs .tab-item .icon {
+    height: 55px;
+}
+
+ion-tabs.req_tabs.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.req_tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.req_tabs.tabs-color-active-positive .tab-item.activated {
+    background: #2bde73;
+    color: white;
+    border-color:#2bde73;
+}
+
+.ion-on-myhome {
+    background: url("../img/r_on_home.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 50px;
+    height: 100%;
+}
+
+.ion-off-myhome {
+    background: url("../img/r_off_home.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 50px;
+    height: 100%;
+}
+
+.ion-on-commercial {
+    background: url("../img/r_on_commercial.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-commercial {
+    background: url("../img/r_off_commercial.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+/********* Request Service - Ion Content **********/
+
+.req_nav_view ion-content.has-tabs-top {
+    top: 200px !important;
+    bottom: 0px;
+}
+
+/********* Request Service - My Home Tabs **********/
+
+.req_tab_myhome {
+    background-color: #f5f5f5;
+    color: #535353;
+}
+
+.req_tab_myhome ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.req_tab_myhome input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_myhome .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_myhome .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_myhome .service_cate {
+    border-top:1px solid #999999; 
+    margin: 0px;
+    display: inline-block;
+}
+
+.req_tab_myhome .service_cate a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.req_tab_myhome .service_cate a img {
+    float: left;
+}
+
+.req_tab_myhome .service_cate a span {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    color: #545454;
+}
+
+/********* Request Service - Commercial Tabs **********/
+
+.req_tab_commercial {
+    background-color: #f5f5f5;
+    color: #535353;
+}
+
+.req_tab_commercial ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.req_tab_commercial input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_commercial .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_commercial .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.req_tab_commercial .service_cate {
+    border-top:1px solid #999999; 
+    margin: 0px;
+}
+
+.req_tab_commercial .service_cate a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.req_tab_commercial .service_cate a img {
+    float: left;
+}
+
+.req_tab_commercial .service_cate a span {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    color: #545454;
+}
+
+/********* Requset CARPENTRY ROUGH Page 1 **********/
+
+.req_car_step_1_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_1_view .has-subheader {
+    bottom: 70px !important;
+    top: 86px !important;
+}
+
+.req_car_step_1_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_1_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_1_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_1_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_1_view ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.req_car_step_1_view input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_1_view .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_1_view .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_1_view .checkbox input:checked:before, .req_car_step_1_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.req_car_step_1_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+    background: #f5f5f5;
+}
+
+.req_car_step_1_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_1_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_1_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+/********* Requset CARPENTRY ROUGH Page 2 **********/
+
+.req_car_step_2_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_2_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_2_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_2_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_2_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_2_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_2_view .checkbox input:checked:before, .req_car_step_2_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.req_car_step_2_view .item {
+    border-width: 0px;
+    background: #f5f5f5;
+}
+
+.req_car_step_2_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_2_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_2_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.budget_range .range {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 420px;
+}
+
+.budget_range .range input {
+    width: 100%;
+    margin: 0px;
+}
+
+.budget_range .range i.icon {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    margin-top: -35px;
+    float: right;
+    margin-right: -55px;
+    color: #2bde72;
+}
+
+/********* Requset CARPENTRY ROUGH Page 4 **********/
+
+.req_car_step_3_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_3_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_3_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_3_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_3_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_3_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_3_view ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.req_car_step_3_view input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_3_view .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_3_view .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.req_car_step_3_view .checkbox input:checked:before, .req_car_step_3_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.req_car_step_3_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+    background: #f5f5f5;
+}
+
+.req_car_step_3_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_3_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_3_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+/********* Requset CARPENTRY ROUGH Page 4 **********/
+
+.req_car_step_4_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_4_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_4_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_4_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_4_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_4_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_4_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_4_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_4_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.req_car_step_4_view .desc {
+    z-index:2;
+    width: 100%;
+    height: 100px;
+    border:1px solid #2cde74; 
+    border-radius:5px; 
+    padding : 10px; 
+    font-size : 14px;
+}
+
+/********* Requset CARPENTRY ROUGH Page 5 **********/
+
+.req_car_step_5_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_5_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_5_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_5_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_5_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_5_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_5_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_5_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_5_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.req_car_step_5_view .desc {
+    z-index:2;
+    width: 100%;
+    height: 350px;
+    border:1px solid #2cde74; 
+    border-radius:5px; 
+    padding : 10px; 
+    font-size : 14px;
+}
+
+/********* Request 6 Tabs **********/
+
+.req_6_tabs.tabs-top > .tabs, .tabs.tabs-top {
+    border: medium none;
+    height: 93px;
+    top: 88px;
+}
+
+.req_6_tabs.tabs-top > .tabs {
+    -webkit-justify-content: flex-start !important; 
+    -moz-justify-content: flex-start !important;
+    justify-content: flex-start !important;
+    background-color: white;
+}
+
+.req_6_tabs.tabs-icon-top > .tabs .tab-item {
+    height: 92px;
+    padding: 10px;
+    background-color: white;
+    color: #545454;
+    border-width: 0px !important;
+    max-width: 25%;
+}
+
+.req_6_tabs .tab-item .icon {
+    height: 55px;
+}
+
+ion-tabs.req_6_tabs.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.req_6_tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.req_6_tabs.tabs-color-active-positive .tab-item.activated {
+    background: #2bde73;
+    color: white;
+
+}
+
+.ion-on-camera {
+    background: url("../img/r_on_camera.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+}
+
+.ion-off-camera {
+    background: url("../img/r_off_camera.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+}
+
+.ion-on-file {
+    background: url("../img/r_on_file.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-file {
+    background: url("../img/r_off_file.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+/********* Request 6 tabs Camera **********/
+
+.req_car_step_6_camera_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_6_camera_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_6_camera_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_6_camera_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_6_camera_view .bar-header.bar-subheader {
+    background:#2bde73 !important;
+}
+
+.req_car_step_6_camera_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_6_camera_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_6_camera_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_6_camera_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.req_car_step_6_camera_view .file_list .item {
+    background-color: transparent; 
+    color: #1f1f1f;
+    margin: -1px;
+    padding: 8px;
+    border-width: 0px 0px 1px 0px;
+    border-color: #999999;
+    font-size: 12px;
+}
+
+.req_car_step_6_camera_view .file_list .item-button-right > .button {
+    background-color: transparent;
+    color: #bbbbbb;
+    top: 3px;
+}
+
+.req_car_step_6_camera_view .file_list .item-button-right > .button::before {
+    line-height: 24px;
+
+}
+
+.req_car_step_6_camera_view .btnPlus {
+    border: 2px solid #dddddd;
+    background: white;
+    border-radius: 50%;
+    font-size: 32px;
+    margin: auto;
+    padding: 0px;
+}
+
+.req_car_step_6_camera_view .btnPlus.button.icon:before {
+    color: #2bde72;
+    font-size: 40px;
+}
+
+
+/********* Request 6 tabs File **********/
+
+.req_car_step_6_file_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_6_file_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_6_file_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_6_file_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_6_file_view .bar-header.bar-subheader {
+    background:#2bde73 !important;
+}
+
+.req_car_step_6_file_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_6_file_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_6_file_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_6_file_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.req_car_step_6_file_view .file_list .item {
+    background-color: transparent; 
+    color: #1f1f1f;
+    margin: -1px;
+    padding: 8px;
+    border-width: 0px 0px 1px 0px;
+    border-color: #999999;
+    font-size: 12px;
+}
+
+.req_car_step_6_file_view .file_list .item-button-right > .button {
+    background-color: transparent;
+    color: #bbbbbb;
+    top: 3px;
+}
+
+.req_car_step_6_file_view .file_list .item-button-right > .button::before {
+    line-height: 24px;
+}
+
+.req_car_step_6_file_view .btnPlus {
+    border: 2px solid #dddddd;
+    background: white;
+    border-radius: 50%;
+    font-size: 32px;
+    margin: auto;
+    padding: 0px;
+}
+
+.req_car_step_6_file_view .btnPlus.button.icon:before {
+    color: #2bde72;
+    font-size: 40px;
+}
+
+/********* Requset CARPENTRY ROUGH Page 7 **********/
+
+.req_car_step_7_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_7_view .has-subheader {
+    bottom: 70px;
+}
+
+.req_car_step_7_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_7_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_7_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_7_view .sub_left_logo {
+    width: 32px;
+    height: 25px;
+    display: inline-block;
+    background: url("../img/r_home_2_w.png") no-repeat scroll 0 0 / 100% 100%;
+    margin: 3px 7px;
+}
+
+.req_car_step_7_view ::-webkit-input-placeholder {
+    color: #5d5d5d !important;
+}
+
+.req_car_step_7_view input:-moz-placeholder {  
+    color: #5d5d5d !important;
+}
+
+.req_car_step_7_view .search_key::-moz-placeholder {  
+    color: #5d5d5d !important;
+}
+
+.req_car_step_7_view .search_key:-ms-input-placeholder {  
+    color: #5d5d5d !important;
+}
+
+.req_car_step_7_view .checkbox input:checked:before, .req_car_step_7_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.req_car_step_7_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+    background: #f5f5f5;
+}
+
+.req_car_step_7_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_7_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_7_view .button.btnSave {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+/*********** Request Service Step 7 Popup Dilaog ***********/
+
+.popup.modal {
+    background: white;
+    bottom: 0px;
+    top: 50%;
+}
+
+.popup.modal .button.btnFindMe {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.popup.modal .button.btnInvite {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+}
+
+/** FORCE THE MODAL */
+
+.active .modal-backdrop-bg {
+    opacity: 0.5;
+}
+.modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+}
+
+/*********** Request Service Step 7 Findme Dilaog ***********/
+
+.findme.modal {
+    background: #f5f5f5;
+    width: 80%;
+    left: 10%;
+    min-height: 70%;
+    top: 10%;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+.findme.modal .button.btnFindMe {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.findme.modal .button.btnInvite {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+}
+
+.findme.modal .pros_list .item {
+    background-color: transparent; 
+    color: #1f1f1f;
+    padding: 0px;
+    border-width: 1px 0px;
+    border-color: #999999;
+    font-size: 12px;
+    min-height: 50px;
+}
+
+.findme.modal .pros_list .item.item-avatar > img {
+    top: 5px;
+}
+
+.findme.modal .pros_list .item p {
+    text-align: left;
+    padding-left: 70px;
+    line-height: 47px;
+    color: #212121;
+}
+
+.findme.modal .pros_list .btnProsCall {
+    background: #003333;
+    color: white;
+    font-size: 13px;
+    min-height: 24px;
+    line-height: 13px;
+    top: 12px;
+}
+
+.findme.modal .pros_list .btnProsCall::before {
+    line-height: 9px;
+    color: #2bde73;
+}
+
+.findme.modal .btnOkay {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px;
+    background: #e8e8e8;
+    border-radius: 0px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    color: #002639;
+    font-weight: bold;
+}
+
+/************* Request Service Page 8 **************/
+
+.req_car_step_8_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_8_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_8_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_8_view .bar-header.bar-subheader {
+    background:#2bde73;
+}
+
+.req_car_step_8_view .bar-header.bar-subheader .button {
+    width: 35%;
+}
+
+.req_car_step_8_view .bar-header.bar-subheader .button.btnCompare {
+    background-color: #002639;
+    border: 1px solid #fefefe;
+    color: #fff;
+}
+
+.req_car_step_8_view .bar-header.bar-subheader .button.btnEstimate {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.req_car_step_8_view .pros_card.card {
+    margin : 10px;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar {
+    padding: 8px 8px 8px 110px;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar > img:first-child {
+    max-width: 95px;
+    max-height: 95px;
+    top: 5px;
+    left: 5px;
+    border-radius: 0px;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar p {
+    font-style: italic;
+    color: #222222;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar .pros_sel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 62px;
+    border: none;
+    padding: 0px;
+    height: 50px;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar .pros_sel .checkbox {
+    top: 0px;
+    left: 18px;
+    width: 28px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+.req_car_step_8_view .pros_card.card .item-avatar .pros_sel .item-content {
+    position: absolute;
+    width: 62px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    font-size: 12px;
+    min-height: 20px;
+    top: 30px;
+}
+
+.req_car_step_8_view .pros_card.card .checkbox input:checked:before, .req_car_step_8_view .pros_card.card .checkbox input:checked + .checkbox-icon:before {
+    background: #fead05;
+    border: 1px solid #d6d6d6;
+}
+
+.req_car_step_8_view .pros_card.card .checkbox input:before, .req_car_step_8_view .pros_card.card .checkbox .checkbox-icon:before {
+    background: #d6d6d6;
+    border: 1px solid #5e5e5e;
+}
+
+.req_car_step_8_view .pros_card.card .loc {
+    background: #dfe3e6;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    font-style: italic;
+    position: relative;
+    padding: 2px 5px;
+    margin: 10px 5px 0px 0px;
+}
+
+.req_car_step_8_view .pros_card.card .item-body {
+    padding: 8px 2%;
+}
+
+/************* Credentials List ****************/
+
+.pros_iv {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: top center;
+    width: 100%;
+    height: 60px;
+    font-size: 11px;
+    padding-top: 40px;
+    color: #333333;
+}
+
+.pros_iv.iv_1.on {
+    background-image: url("../img/r_iv_1.png");
+}
+
+.pros_iv.iv_2.on {
+    background-image: url("../img/r_iv_2.png");
+}
+
+.pros_iv.iv_3.on {
+    background-image: url("../img/r_iv_3.png");
+}
+
+.pros_iv.iv_4.on {
+    background-image: url("../img/r_iv_4.png");
+}
+
+.pros_iv.iv_5.on {
+    background-image: url("../img/r_iv_5.png");
+}
+
+.pros_iv.iv_6.on {
+    background-image: url("../img/r_iv_6.png");
+}
+
+.pros_iv.iv_1.off {
+    background-image: url("../img/r_iv_1_off.png");
+}
+
+.pros_iv.iv_2.off {
+    background-image: url("../img/r_iv_2_off.png");
+}
+
+.pros_iv.iv_3.off {
+    background-image: url("../img/r_iv_3_off.png");
+}
+
+.pros_iv.iv_4.off {
+    background-image: url("../img/r_iv_4_off.png");
+}
+
+.pros_iv.iv_5.off {
+    background-image: url("../img/r_iv_5_off.png");
+}
+
+.pros_iv.iv_6.off {
+    background-image: url("../img/r_iv_6_off.png");
+}
+
+.pros_iv.ver_1.on {
+    background-image: url("../img/r_pv_1.png");
+}
+
+.pros_iv.ver_2.on {
+    background-image: url("../img/r_pv_2.png");
+}
+
+.pros_iv.ver_3.on {
+    background-image: url("../img/r_pv_3.png");
+}
+
+.pros_iv.ver_1.off {
+    background-image: url("../img/r_pv_1_off.png");
+}
+
+.pros_iv.ver_2.off {
+    background-image: url("../img/r_pv_2_off.png");
+}
+
+.pros_iv.ver_3.off {
+    background-image: url("../img/r_pv_3_off.png");
+}
+
+/*****************************/
+
+.item-footer {
+    height: 50px;
+    background-color: #002639;
+    padding: 5px 0px;
+    color: white;
+    text-align: center;
+}
+
+.item-footer .btnEmail {
+    border-left: 1px solid #fefefe;
+    border-right: 1px solid #fefefe;
+}
+
+.item-footer .mk_icon {
+
+}
+
+.mk_icon.ion-mk-call {
+    background: url("../img/r_m_call.png") no-repeat;
+    background-size: 20px 17px;
+    padding-left: 40px;
+}
+
+.mk_icon.ion-mk-email {
+    background: url("../img/r_m_email.png") no-repeat;
+    background-size: 22px 16px;
+    padding-left: 40px;
+}
+
+.mk_icon.ion-mk-chat {
+    background: url("../img/r_m_chat.png") no-repeat;
+    background-size: 23px 18px;
+    padding-left: 40px;
+}
+
+/*********** Request Service Step 8 Estimate Dilaog ***********/
+
+.estimate.modal {
+    background: #f5f5f5;
+    width: 80%;
+    left: 10%;
+    min-height: 80%;
+    top: 10%;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+.estimate.modal .button.btnFindMe {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+}
+
+.estimate.modal .button.btnInvite {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+}
+
+.estimate.modal .pros_list .item {
+    background-color: transparent; 
+    color: #1f1f1f;
+    padding: 0px;
+    border-width: 1px 0px;
+    border-color: #999999;
+    font-size: 12px;
+    min-height: 50px;
+}
+
+.estimate.modal .pros_list .item.item-avatar > img {
+    top: 5px;
+}
+
+.estimate.modal .pros_list .item p {
+    text-align: left;
+    padding-left: 70px;
+    line-height: 47px;
+    color: #212121;
+}
+
+.estimate.modal .pros_list .btnProsCall {
+    background: #003333;
+    color: white;
+    font-size: 13px;
+    min-height: 24px;
+    line-height: 13px;
+    top: 12px;
+}
+
+.estimate.modal .pros_list .btnProsCall::before {
+    line-height: 9px;
+    color: #2bde73;
+}
+
+.estimate.modal .btnOkay {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px;
+    background: #e8e8e8;
+    border-radius: 0px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    color: #002639;
+    font-weight: bold;
+}
+
+/********* Requset CARPENTRY ROUGH Page 9 **********/
+
+.req_car_step_9_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_9_view ion-content {
+    border-top: 5px solid #2ADE73;
+}
+
+.req_car_step_9_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_9_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_9_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+}
+
+.req_car_step_9_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.req_car_step_9_view .button.btnFilter {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+}
+
+.req_car_step_9_view .rating_range .range {
+    border: none;
+    padding: 0px;
+    width: 90%;
+}
+
+.req_car_step_9_view .rating_range .range input {
+    margin: 0px;
+}
+
+.req_car_step_9_view .rating li {
+    float: left;
+    width: 20%;
+}
+
+.req_car_step_9_view .rating li i {
+    font-size: 2em;
+    color: #bbb;
+}
+
+.req_car_step_9_view .rating .ion-ios-star-half:before, .req_car_step_9_view .rating .ion-ios-star:before {
+    color: #2bde73;
+}
+
+/********* Requset CARPENTRY ROUGH Page 10 **********/
+
+.req_car_step_10_view {
+    background: #f5f5f5;
+}
+
+.req_car_step_10_view ion-content {
+    border-top: 5px solid #2ADE73;
+}
+
+.req_car_step_10_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.req_car_step_10_view .bar-header button {
+    color: #2ADE73;
+}
+
+.req_car_step_10_view .pros_list {
+    height: 100%;
+    margin-top: -1px;
+}
+
+.req_car_step_10_view .pros_list .box {
+    height: 100%;
+    padding: 0px;
+}
+
+.req_car_step_10_view .pros_list .box .col {
+    height: 100%;
+    padding: 0px;
+}
+
+.req_car_step_10_view .pros_list .box .col.col-left {
+    background: url("../img/s_bk_1.png") repeat-y;
+    background-size: 100% 1px;
+}
+
+.req_car_step_10_view .pros_list .box .col.col-right {
+    background: url("../img/s_bk_2.png") repeat-y;
+    background-size: 100% 1px;
+}
+
+
+/*** Rating ***/
+
+.req_car_step_10_view .rating {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.req_car_step_10_view .rating li {
+    float: left;
+    padding: 2px;
+}
+
+.req_car_step_10_view .rating li i {
+    font-size: 2em;
+    color: #bbb;
+}
+
+.req_car_step_10_view .rating .ion-ios-star-half:before, .req_car_step_10_view .rating .ion-ios-star:before {
+    color: #2bde73;
+}
+
+/*** Select ***/
+
+.req_car_step_10_view .pros_sel {
+    width: 62px;
+    border: none;
+    padding: 0px;
+    height: 50px;
+    background: transparent;
+    margin: auto;
+    top: 5px;
+}
+
+.req_car_step_10_view .pros_sel .checkbox {
+    top: 0px;
+    left: 18px;
+    width: 28px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+.req_car_step_10_view .pros_sel .item-content {
+    position: absolute;
+    width: 62px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    font-size: 12px;
+    min-height: 20px;
+    top: 30px;
+}
+
+.req_car_step_10_view .checkbox input:checked:before, .req_car_step_10_view .checkbox input:checked + .checkbox-icon:before {
+    background: #fead05;
+    border: 1px solid #d6d6d6;
+}
+
+.req_car_step_10_view .checkbox input:before, .req_car_step_10_view .checkbox .checkbox-icon:before {
+    background: #d6d6d6;
+    border: 1px solid #5e5e5e;
+}
+
+
+/**** Avatar ***/
+
+.req_car_step_10_view .pros_avatar {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+/**** Pros Verification ***/
+
+.pros_ver {
+    margin-left: 1%;
+    margin-right: 1%;
+
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border:1px solid #d6d6d6;
+}
+
+.pros_box.on {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+}
+
+.pros_box.off {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    border-radius: 50%;
+    color: #bbbbbb;
+    margin: auto;
+}
+
+/********* Search Proc Page **********/
+
+.search_proc_view {
+    background: #f5f5f5;
+}
+
+.search_proc_view .has-subheader {
+    bottom: 70px;
+    top: 200px !important;
+}
+
+.search_proc_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.search_proc_view .bar-header button {
+    color: #2ADE73;
+}
+
+.search_proc_view .bar-header.bar-subheader {
+    background:#2bde73;
+    height: 150px;
+    border-bottom: 1px solid #999999;
+}
+
+.search_proc_view .bar-header.bar-subheader .item.item-input {
+    width: 100%; 
+    border-radius:10px; 
+    background: #dffaea; 
+    border: none;
+}
+
+.search_proc_view .bar-header.bar-subheader .item.item-input .icon {
+    color:#002639;
+    font-size:1.5em;
+}
+
+.search_proc_view .bar-header.bar-subheader .search_result {
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-left: 30px;
+}
+
+.search_proc_view ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.search_proc_view input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.search_proc_view .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.search_proc_view .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.search_proc_view .checkbox input:checked:before, .search_proc_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.search_proc_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+}
+
+/*** Bottom Bar ***/
+
+.search_proc_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px;
+    background-color: #2bde73;
+}
+
+.search_proc_view .bottom_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin: 0px;
+}
+
+.search_proc_view .bottom_bar .button.btnExpand {
+    background: transparent;
+    color: #fff;
+    width: 35%;
+    border-radius: 0px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.search_proc_view .bottom_bar .icon {
+    font-size: 2em;
+    line-height: 70px;
+    color: white;
+}
+
+/*** Top Bar ***/
+
+.map_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.map_view .bar-header button {
+    color: #2ADE73;
+}
+
+.map_view .top_bar {
+    position: absolute;
+    top:44px; /* zzz */
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    background-color: #2bde73;
+}
+
+.map_view .top_bar .row {
+    text-align:center; 
+    display:inline-block; 
+    padding:0px;
+    margin: 0px;
+}
+
+.map_view .top_bar .button.btnClose {
+    background: transparent;
+    color: #fff;
+    width: 35%;
+    border-radius: 0px;
+    display: inline-block;
+}
+
+.map_view .top_bar .icon {
+    font-size: 2em;
+    line-height: 70px;
+    color: white;
+}
+
+.map_view #map {
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+/*
+.map_view .pros_title {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     width: 40px;
+     border: 2px solid black;
+     white-space: nowrap;
+}
+*/
+
+/***  ***/
+
+.search_proc_view .pros_card.card {
+    margin : 10px;
+}
+
+.search_proc_view .pros_card.card a {
+    text-decoration: none;
+}
+
+.search_proc_view .pros_card.card .item-avatar {
+    padding: 8px 8px 8px 110px;
+    background-color: white;
+}
+
+.search_proc_view .pros_card.card .item-avatar > img:first-child {
+    max-width: 95px;
+    max-height: 95px;
+    top: 5px;
+    left: 5px;
+    border-radius: 0px;
+}
+
+.search_proc_view .pros_card.card .item-avatar p {
+    font-style: italic;
+    color: #222222;
+}
+
+.search_proc_view .pros_card.card .item-avatar .pros_sel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 62px;
+    border: none;
+    padding: 0px;
+    height: 50px;
+    text-align: center;
+}
+
+.search_proc_view .pros_card.card .item-avatar .pros_sel .checkbox {
+    top: 0px;
+    left: 18px;
+    width: 28px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+.search_proc_view .pros_card.card .item-avatar .pros_sel .item-content {
+    position: absolute;
+    width: 62px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    font-size: 12px;
+    min-height: 20px;
+    top: 30px;
+}
+
+.search_proc_view .pros_card.card .checkbox input:checked:before, .search_proc_view .pros_card.card .checkbox input:checked + .checkbox-icon:before {
+    background: #fead05;
+    border: 1px solid #d6d6d6;
+}
+
+.search_proc_view .pros_card.card .checkbox input:before, .search_proc_view .pros_card.card .checkbox .checkbox-icon:before {
+    background: #d6d6d6;
+    border: 1px solid #5e5e5e;
+}
+
+.search_proc_view .pros_card.card .loc {
+    background: #dfe3e6;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-style: italic;
+    position: relative;
+    padding: 2px 5px;
+    margin: 10px 5px 0px 0px;
+}
+
+.search_proc_view .pros_card.card .item-body {
+    padding: 8px 2%;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+/********* Search Proc Detail Page **********/
+
+.search_detail_view {
+    background: #fff;
+}
+
+.search_detail_view .has-subheader {
+    bottom: 70px;
+    top: 180px;
+}
+
+.search_detail_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.search_detail_view .bar-header button {
+    color: #2ADE73;
+}
+
+.search_detail_view ion-content {
+    border-top: 5px solid #2ADE73;
+}
+
+.search_detail_view .checkbox input:checked:before, .search_detail_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.search_detail_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+}
+
+.search_detail_view .pros_card {
+    margin : 0px;
+}
+
+.search_detail_view .pros_card .item-avatar {
+    padding: 8px 8px 8px 110px;
+    background: url("../img/search_item_bk.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.search_detail_view .pros_card .item-avatar > img:first-child {
+    max-width: 55px;
+    max-height: 55px;
+    top: 10px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.search_detail_view .pros_card .item-avatar p {
+    font-style: italic;
+    color: #222222;
+    font-size: 11px;
+}
+
+.search_detail_view .pros_card .item-avatar .btnMoreInfo {
+    font-size: 10px;
+    border: 1px solid #a3a3a3;
+    color: #212121;
+    background: white;
+    border-radius: 2px;
+    padding: 3px 6px;
+    line-height: 10px;
+    margin-left: -80px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search_detail_view .pros_card .item-avatar .pros_sel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 62px;
+    border: none;
+    padding: 0px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.search_detail_view .pros_card .item-avatar .pros_sel .checkbox {
+    top: 0px;
+    left: 18px;
+    width: 28px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+.search_detail_view .pros_card .item-avatar .pros_sel .item-content {
+    position: absolute;
+    width: 62px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    font-size: 8px;
+    min-height: 20px;
+    top: 30px;
+}
+
+.search_detail_view .pros_card .checkbox input:checked:before, .search_detail_view .pros_card .checkbox input:checked + .checkbox-icon:before {
+    background: #fead05;
+    border: 1px solid #d6d6d6;
+}
+
+.search_detail_view .pros_card .checkbox input:before, .search_detail_view .pros_card .checkbox .checkbox-icon:before {
+    background: #d6d6d6;
+    border: 1px solid #5e5e5e;
+}
+
+.search_detail_view .detail_header {
+    color: #5a5a5a;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.search_detail_view .detail_body {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    color: #1b1b1b;
+    font-size: 12px;
+}
+
+.search_detail_view .profile_gallery {
+  overflow: scroll;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.search_detail_view .profile_gallery .scroll { 
+  min-width: 100%;
+}
+
+.search_detail_view .review_cube {
+    color: #212121;
+    padding: 0px 10px;
+}
+
+.search_detail_view .review_cube .rating_cube {
+    position: absolute;
+    right: 25px;
+    margin-top: 5px;
+}
+
+.search_detail_view  .odd {
+    background-color: #f5f5f5;
+}
+
+.search_detail_view  .even {
+    background-color: #fff;
+}
+
+.search_detail_view .detail_tag {
+    color: #202020;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    padding: 0px 5px;
+    font-size: 10px;
+}
+
+/********* Search Invite Pro Page **********/
+
+.search_invite_view {
+    background: #fff;
+}
+
+.search_invite_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.search_invite_view .bar-header button {
+    color: #2ADE73;
+}
+
+.search_invite_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 100px;
+}
+
+.search_invite_view .user_avatar {
+    border-radius: 50%;
+}
+
+.search_invite_view .checkbox input:checked:before, .search_invite_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.search_invite_view .item {
+    border-color: #999999;
+    border-width: 1px 0px;
+    background: #f5f5f5;
+}
+
+.search_invite_view .item .item-content {
+    text-align: left;
+}
+
+.search_invite_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+    background-color: #f5f5f5;
+}
+
+.search_invite_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search_invite_view .button.btnInvite {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+/********* Deals List Page **********/
+
+.deal_list_view {
+    background: #f5f5f5;
+}
+
+.deal_list_view .has-subheader {
+    top: 245px !important;
+}
+
+.deal_list_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.deal_list_view .bar-header button {
+    color: #2ADE73;
+}
+
+.deal_list_view .bar-header.bar-subheader {
+    background:#2bde73;
+    height: 180px;
+    border-bottom: 1px solid #999999;
+}
+
+.deal_list_view .bar-header.bar-subheader .item.item-input {
+    width: 100%; 
+    border-radius:10px; 
+    background: #dffaea; 
+    border: none;
+}
+
+.deal_list_view .bar-header.bar-subheader .item.item-input .icon {
+    color:#002639;
+    font-size:1.5em;
+}
+
+.deal_list_view .bar-header.bar-subheader .search_result {
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px 30px;
+    font-style:italic; 
+    color:#002639;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+
+.deal_list_view .bar-header.bar-subheader .search_option {
+    padding: 10px 5px;
+}
+
+.deal_list_view .search_option span {
+    margin-right: 5px;
+}
+
+.deal_list_view .search_option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.deal_list_view ::-webkit-input-placeholder {
+    color: #002639 !important;
+}
+
+.deal_list_view input:-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.deal_list_view .search_key::-moz-placeholder {  
+    color: #002639 !important;
+}
+
+.deal_list_view .search_key:-ms-input-placeholder {  
+    color: #002639 !important;
+}
+
+.deal_list_view ion-content {
+    top: 100px;
+}
+
+.deal_list_view .deal_card {
+    padding: 0px;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+}
+
+.deal_list_view .deal_card a {
+    text-decoration: none;
+}
+
+.deal_list_view .deal_card .item-avatar {
+    padding-left: 150px;
+}
+
+.deal_list_view .deal_card .item-avatar > .job_pic {
+    max-width: 120px;
+    max-height: 110px;
+    border-radius: 0px;
+}
+
+.deal_list_view .deal_card .item-avatar .pro_pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.deal_list_view .deal_card .item-avatar .pro_name {
+    line-height: 30px;
+}
+
+.deal_list_view .deal_card .item-avatar .deal_price {
+    color: #2bde73;
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.deal_list_view .deal_card .item-footer {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0px;
+}
+
+.deal_list_view .deal_card .item-footer .deal_save_price {
+    text-decoration: line-through;
+    color: red;
+}
+
+/********* Deals Detail Page **********/
+
+.deal_detail_view {
+    background: #f5f5f5;
+}
+
+.deal_detail_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.deal_detail_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 60px;
+}
+
+.deal_detail_view .bar-header button {
+    color: #2ADE73;
+}
+
+.deal_detail_view .deal_card .item-avatar {
+    border: 0;
+    min-height: 170px;
+}
+
+.deal_detail_view .deal_card .job_pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}
+
+.deal_detail_view .deal_card .item-footer {
+    border: 0;
+}
+
+.deal_detail_view .pro_data * {
+    color: #212121;
+}
+
+.deal_detail_view .pro_pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.deal_detail_view .pro_name {
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.deal_detail_view .price_box {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.deal_detail_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+    background-color: #f5f5f5;
+}
+
+.deal_detail_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deal_detail_view .button.btnHideMe {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+/********* Deals Hide Page **********/
+
+.deal_hide_view {
+    background: #f5f5f5;
+}
+
+.deal_hide_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.deal_hide_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 60px;
+}
+
+.deal_hide_view .bar-header button {
+    color: #2ADE73;
+}
+
+.deal_hide_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    padding: 0px 30px;
+    background-color: #f5f5f5;
+}
+
+.deal_hide_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deal_hide_view .button.btnHideMe {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.deal_hide_view ion-content label {
+    color: #5d5d5d;
+    margin: 15px 0px 5px 20px;
+}
+
+.deal_hide_view ion-content input {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.deal_hide_view ion-content textarea {
+    width: 100%;
+    height: 200px;
+    border:1px solid #d6d6d6; 
+    border-radius:5px; 
+    padding : 10px; 
+    font-size : 14px;
+}
+
+/********* Track Tabs **********/
+
+.track_tabs.tabs-top > .tabs, .tabs.tabs-top {
+    border: medium none;
+    height: 77px;
+}
+
+.tabs-icon-top.track_tabs > .tabs .tab-item {
+    height: 77px;
+    padding: 10px;
+    background-color: white;
+    color: #545454;
+    border-top: 3px solid #2bde73 !important;
+    max-width: none;
+}
+
+.track_tabs .tab-item .icon {
+    height: 40px;
+}
+
+ion-tabs.track_tabs.tabs-color-active-positive .tab-item.tab-item-active,
+ion-tabs.track_tabs.tabs-color-active-positive .tab-item.active,
+ion-tabs.track_tabs.tabs-color-active-positive .tab-item.activated {
+    background: #2bde73;
+    color: white;
+
+}
+
+.ion-on-t-request {
+    background: url("../img/t_request_on.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-t-request {
+    background: url("../img/t_request_off.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-on-t-estiamte {
+    background: url("../img/t_estimate_on.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-t-estiamte {
+    background: url("../img/t_estimate_off.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-t-job {
+    background: url("../img/t_job_off.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-on-t-job {
+    background: url("../img/t_job_on.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 30px;
+    height: 100%;
+}
+
+.ion-off-t-payment {
+    background: url("../img/t_payment_off.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+}
+
+.ion-on-t-payment {
+    background: url("../img/t_payment_on.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+}
+
+.track_nav_view {
+
+}
+
+.track_nav_view .bar-header {
+    background-color: #002639 !important;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_nav_view .bar-header button {
+    color: #2ADE73;
+}
+
+
+/********* Track Request View **********/
+
+.track_request_view {
+    background: #f5f5f5;
+}
+
+.track_request_view ion-content.has-tabs-top {
+    top: 140px !important;
+}
+
+.track_request_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_request_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_request_view a.item {
+    border-width: 0 0 2px 0;
+    background: #f5f5f5;
+    padding: 10px 0px 5px 15px;
+}
+
+.track_request_view .item h4 {
+    font-weight: bold;
+}
+
+.track_request_view .item .open_req {
+    color : #A1B848;
+}
+
+.track_request_view .item .cancel_req {
+    color : #9F9F9F;
+}
+
+.track_request_view .item .receive_req {
+    color : #F8820A;
+}
+
+/********* Track Estimate View **********/
+
+.track_estimate_view {
+    background: #f5f5f5;
+}
+
+.track_estimate_view ion-content.has-tabs-top {
+    top: 140px !important;
+}
+
+.track_estimate_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_estimate_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_estimate_view a.item {
+    border-width: 0 0 2px 0;
+    background: #f5f5f5;
+    padding: 10px 0px 5px 75px;
+}
+
+.track_estimate_view .item-select select {
+    color: white;
+}
+
+
+
+/********* Track Jobs View **********/
+
+.track_job_view {
+    background: #f5f5f5;
+}
+
+.track_job_view ion-content.has-tabs-top {
+    top: 140px !important;
+}
+
+.track_job_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_job_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_job_view a.item {
+    border-width: 0 0 2px 0;
+    background: #f5f5f5;
+    padding: 10px 0px 5px 15px;
+}
+
+.track_job_view .item h4 {
+    font-weight: bold;
+}
+
+.track_job_view .item .prog_job {
+    color : #A1B848;
+}
+
+.track_job_view .item .halt_job {
+    color : #EE1900;
+}
+
+/********* Track Payment View **********/
+
+.track_payment_view {
+    background: #f5f5f5;
+}
+
+.track_payment_view ion-content.has-tabs-top {
+    top: 140px !important;
+}
+
+.track_payment_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_payment_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_payment_view a.item {
+    border-width: 0 0 2px 0;
+    background: #f5f5f5;
+    padding: 10px 0px 5px 15px;
+}
+
+
+.track_payment_view .item .progress {
+    color: #8bba00;
+}
+
+.track_payment_view .item .completed {
+    color:  #002639;
+}
+
+.track_payment_view .item .button {
+    background-color: #002639;
+    padding: 0px 30px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    line-height: 38px;
+    min-height: 38px;
+}
+
+
+/********* Track Request Detail View **********/
+
+.track_request_detail_view {
+    background: #f5f5f5;
+}
+
+.track_request_detail_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_request_detail_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_request_detail_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 120px;
+}
+
+.track_request_detail_view .btnOpen {
+    width: 97%;
+    color: #8bba00;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.track_request_detail_view .pros_row {
+    border-bottom:1px solid #d6d6d6;
+    display: inline-block;
+}
+
+.track_request_detail_view .pros_row img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.track_request_detail_view .pros_row h4 {
+    float: left;
+}
+
+.track_request_detail_view .pros_row .icon {
+    float: right;
+}
+
+.track_request_detail_view .pros_row .icon.ion-eye:before {
+    font-size: 32px;
+    line-height: 40px;
+    margin-right: 40px;
+}
+
+.track_request_detail_view .pros_row .icon.ion-close-circled:before {
+    font-size: 18px;
+    line-height: 40px;
+    color:#bbbbbb;
+}
+
+.track_request_detail_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.track_request_detail_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+}
+
+.track_request_detail_view .button.btnInvite {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.track_request_detail_view .button.btnSelect {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+/********* Track Job Detail View **********/
+
+.track_job_detail_view {
+    background: #f5f5f5;
+}
+
+.track_job_detail_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_job_detail_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_job_detail_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 120px;
+}
+
+.track_job_detail_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.track_job_detail_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+}
+
+.track_job_detail_view .button.btnComplete {
+    background: #002639;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.track_job_detail_view .button.btnHalt {
+    background: #f11e00;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.track_job_detail_view #map {
+    width: 100%;
+    height: 170px;
+}
+
+/*********** Request Service Step 8 Estimate Dilaog ***********/
+
+.review.modal {
+    background: #f5f5f5;
+    width: 80%;
+    left: 10%;
+    min-height: 80%;
+    top: 10%;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+.review.modal .btnOkay {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0px;
+    background: #e8e8e8;
+    border-radius: 0px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    color: #002639;
+    font-weight: bold;
+}
+
+.review.modal .rating_range .range {
+    border: none;
+    padding: 0px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.review.modal .rating_range .range input {
+    margin: 0px;
+}
+
+.review.modal .rating {
+    width: 100%;
+}
+
+.review.modal .rating li {
+    float: left;
+    width: 20%;
+}
+
+.review.modal .rating li i {
+    font-size: 2em;
+    color: #bbb;
+}
+
+.review.modal .rating .ion-ios-star-half:before, .review.modal .rating .ion-ios-star:before {
+    color: #2bde73;
+}
+
+.review.modal .txtReview {
+    width: 100%;
+    height: 300px;
+    border:1px solid #d6d6d6;
+    border-radius:5px; 
+    padding : 10px; 
+    font-size : 14px;
+}
+
+/********* Track Estimate Detail View **********/
+
+.track_estimate_detail_view {
+    background: #f5f5f5;
+}
+
+.track_estimate_detail_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_estimate_detail_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_estimate_detail_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 120px;
+}
+
+.track_estimate_detail_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.track_estimate_detail_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+}
+
+.track_estimate_detail_view .button.btnConfirm {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.track_estimate_detail_view .checkbox input:checked:before, .track_estimate_detail_view .checkbox input:checked + .checkbox-icon:before {
+    background: #2bde72;
+    border-color: #dcdcdc;
+    border: none;
+}
+
+.track_estimate_detail_view .chbConfirm {
+    border: none;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 16px;
+    white-space: normal;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/********* Track Estimate Sign View **********/
+
+.track_estimate_sign_view {
+    background: #f5f5f5;
+}
+
+.track_estimate_sign_view .bar-header {
+    background-color: #002639;
+    background-image: none;
+    border-bottom: 0px;
+    color: #f5f5f5;
+}
+
+.track_estimate_sign_view .bar-header button {
+    color: #2ADE73;
+}
+
+.track_estimate_sign_view ion-content {
+    border-top: 5px solid #2ADE73;
+    background-color: #f5f5f5;
+    bottom: 60px;
+}
+
+.track_estimate_sign_view .bottom_bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+
+.track_estimate_sign_view .bottom_bar .row {
+    text-align:center;
+    display:inline-block;
+    padding:0px;
+    margin-top: 10px;
+}
+
+.track_estimate_sign_view .button.btnConfirm {
+    background: #2bde72;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.track_estimate_sign_view .signature {
+    background: url("../img/sign_here.png") no-repeat;
+    background-size: 80% auto;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

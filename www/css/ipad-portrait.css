@@ -1,0 +1,47 @@
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .ipad-portrait { color: red; } /* your css rules for ipad portrait */
+
+    .start_page .slide_box.box1 {
+        background-size: 100% auto;
+    }
+
+    .start_page .slide_box.box2 {
+        background-size: 100% auto;
+    }
+
+    .start_page .slide_box.box3 {
+        background-size: 100% auto;
+    }
+
+    .login_page {
+        background-size: 100% auto;
+    }
+
+    .loginex_page {
+        background-size: 100% auto;
+    }
+
+    .signup_page {
+        background-size: 100% auto;
+    }
+
+    .singupex_page {
+        background-size: 100% auto;
+    }
+
+    .home_page .logo {
+        width: 160px;
+        height: 140px;
+        margin: 150px auto 0px auto;
+    }
+
+    .emergency_page ion-content {
+        background-size: 100% auto;
+    }
+
+    .search_detail_view .pros_card .item-avatar {
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+}

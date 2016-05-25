@@ -1,0 +1,67 @@
+<ion-view class="emergency_page">
+  <ion-header-bar class="header_bar">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="h1 title">
+      Emergency
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+	
+  </ion-header-bar>
+
+  <ion-content style="" scroll="">
+
+    <div class="row" style="margin-top: 20px;">
+      <a href="tel:844" class="button button-block btnEmergency" ng-click="goEmergency()">
+        CALL 844-Help-Service
+      </a>
+    </div>
+
+    <div class="row" style="margin-top: 35px;">
+      <h3 style="font-style: italic; width: 100%; text-align: center; color:#002639; z-index:2;">OR</h3>
+    </div>
+
+  	<div class="row" style="margin-top: 30px;">
+  		<label style=" font-size: 13px; font-weight:bold; color:#464646; z-index:2;">ENTER DETAILS BELOW</label>
+  	</div>
+
+  	<div class="form">
+      <div class="row">
+        <label class="item item-input" style="border-top: 1px solid #2cde74;">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" placeholder="Name" ng-model="user.name">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input">
+          <i class="icon ion-ios-location placeholder-icon"></i>
+          <input type="text" placeholder="Address" ng-model="user.address">
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="item item-input">
+          <i class="icon ion-iphone placeholder-icon"></i>
+          <input type="tel" placeholder="Telephone" ng-model="user.phonenumber">
+        </label>
+      </div>
+
+      <div class="row" style="margin-top:30px;">
+        <textarea class="txtProblem" placeholder="Describe us your problem in a few lines and we willget back to you shortly" ng-model="user.problem"></textarea>
+      </div>
+  	</div>
+
+    <div class="bottom_bar">
+      <div class="row" style="margin-bottom:30px;">
+        <button class="button button-block btnSend" ng-click="goSend()">
+          SEND
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

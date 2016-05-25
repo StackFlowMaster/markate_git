@@ -1,0 +1,275 @@
+<ion-view class="req_car_step_10_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Compare
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="" scroll="true">
+
+    <ion-slide-box class="pros_list" on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <!-- box start -->
+        <div class="row box">
+          <div class="col col-50 text-center col-left">
+            <div style="border-bottom: 1px solid #c0c0c0;">
+              <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked">
+                INVITED
+              </ion-checkbox>
+
+              <img class="pros_avatar" ng-src="{{pros.url}}">
+
+              <h4>NAME OF PRO</h4>
+              <p style="font-style:italic;"><strong>4+</strong> years in Business</p>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <rating ng-model="pros.rating" max="5"></rating>
+              <div style="font-size:14px; font-style:italic;">100% SUCCESS</div>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro credentials</div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_1 on">
+                  licensed
+                </span>
+                <span class="pros_iv iv_2 on">
+                  bonded
+                </span>
+                <span class="pros_iv iv_3 off">
+                  insured
+                </span>
+              </div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_4 off">
+                  acredited
+                </span>
+                <span class="pros_iv iv_5 on">
+                  response
+                </span>
+                <span class="pros_iv iv_6 on">
+                  since
+                </span>
+              </div>
+            </div>
+
+            <div style="padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro verification</div>
+
+              <div class="row text-center" style="width:90%; margin:auto;">
+                <span class="pros_iv ver_1 on">
+                </span>
+                <span class="pros_iv ver_2 off">
+                </span>
+                <span class="pros_iv ver_3 on">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-50 text-center col-right">
+            <div style="border-bottom: 1px solid #c0c0c0;">
+              <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked">
+                INVITED
+              </ion-checkbox>
+
+              <img class="pros_avatar" ng-src="{{pros.url}}">
+
+              <h4>NAME OF PRO</h4>
+              <p style="font-style:italic;"><strong>4+</strong> years in Business</p>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <rating ng-model="pros.rating" max="5"></rating>
+              <div style="font-size:14px; font-style:italic;">100% SUCCESS</div>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro credentials</div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_1 on">
+                  licensed
+                </span>
+                <span class="pros_iv iv_2 on">
+                  bonded
+                </span>
+                <span class="pros_iv iv_3 off">
+                  insured
+                </span>
+              </div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_4 off">
+                  acredited
+                </span>
+                <span class="pros_iv iv_5 on">
+                  response
+                </span>
+                <span class="pros_iv iv_6 on">
+                  since
+                </span>
+              </div>
+            </div>
+
+            <div style="padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro verification</div>
+
+              <div class="row text-center" style="width:90%; margin:auto;">
+                <span class="pros_iv ver_1 on">
+                </span>
+                <span class="pros_iv ver_2 off">
+                </span>
+                <span class="pros_iv ver_3 on">
+                </span>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- box end -->
+      </ion-slide>
+
+      <ion-slide>
+        <!-- box start -->
+        <div class="row box">
+          <div class="col col-50 text-center col-left">
+            <div style="border-bottom: 1px solid #c0c0c0;">
+              <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked">
+                INVITED
+              </ion-checkbox>
+
+              <img class="pros_avatar" ng-src="{{pros.url}}">
+
+              <h4>NAME OF PRO</h4>
+              <p style="font-style:italic;"><strong>4+</strong> years in Business</p>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <rating ng-model="pros.rating" max="5"></rating>
+              <div style="font-size:14px; font-style:italic;">100% SUCCESS</div>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro credentials</div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_1 on">
+                  licensed
+                </span>
+                <span class="pros_iv iv_2 on">
+                  bonded
+                </span>
+                <span class="pros_iv iv_3 off">
+                  insured
+                </span>
+              </div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_4 off">
+                  acredited
+                </span>
+                <span class="pros_iv iv_5 on">
+                  response
+                </span>
+                <span class="pros_iv iv_6 on">
+                  since
+                </span>
+              </div>
+            </div>
+
+            <div style="padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro verification</div>
+
+              <div class="row text-center" style="width:90%; margin:auto;">
+                <span class="pros_iv ver_1 on">
+                </span>
+                <span class="pros_iv ver_2 off">
+                </span>
+                <span class="pros_iv ver_3 on">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-50 text-center col-right">
+            <div style="border-bottom: 1px solid #c0c0c0;">
+              <ion-checkbox class="pros_sel" ng-model="pros.checked" ng-checked="pros.checked">
+                INVITED
+              </ion-checkbox>
+
+              <img class="pros_avatar" ng-src="{{pros.url}}">
+
+              <h4>NAME OF PRO</h4>
+              <p style="font-style:italic;"><strong>4+</strong> years in Business</p>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <rating ng-model="pros.rating" max="5"></rating>
+              <div style="font-size:14px; font-style:italic;">100% SUCCESS</div>
+            </div>
+
+            <div style="border-bottom: 1px solid #c0c0c0; padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro credentials</div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_1 on">
+                  licensed
+                </span>
+                <span class="pros_iv iv_2 on">
+                  bonded
+                </span>
+                <span class="pros_iv iv_3 off">
+                  insured
+                </span>
+              </div>
+
+              <div class="row text-center">
+                <span class="pros_iv iv_4 off">
+                  acredited
+                </span>
+                <span class="pros_iv iv_5 on">
+                  response
+                </span>
+                <span class="pros_iv iv_6 on">
+                  since
+                </span>
+              </div>
+            </div>
+
+            <div style="padding : 10px;">
+              <div style="font-size:14px; font-style:italic;">Pro verification</div>
+
+              <div class="row text-center" style="width:90%; margin:auto;">
+                <span class="pros_iv ver_1 on">
+                </span>
+                <span class="pros_iv ver_2 off">
+                </span>
+                <span class="pros_iv ver_3 on">
+                </span>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- box end -->
+      </ion-slide>
+
+    </ion-slide-box>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+

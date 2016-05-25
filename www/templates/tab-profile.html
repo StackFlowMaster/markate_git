@@ -1,0 +1,159 @@
+<ion-view class="tab_profile_page">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      My Account
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="row" style="background-color:#e9e9e9; padding: 20px;">
+      <div class="col col-40" style="text-align:center;">
+        <img class="avatar image-circle" src="img/avatar.png" width="90" height="90" />
+      </div>
+      <div class="col col-60">
+        <div class="row"><strong>Alie</strong></div>
+        <ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
+        <div class="row">
+          <button class="button button-small button-stable btnMore" ng-click="goMoreInfo()">
+            {{bTitle}}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row btnEdit">
+      <div style="margin:auto" ng-click="goAccount()">
+        <icon class="icon ion-settings"></icon><span>Edit profile</span>
+      </div>
+    </div>
+
+    <!--div class="row" style="padding:0px;">
+        <div class="btnEmergency ion-settings" ng-click="goEmergency()">
+          <span style="font-size:16px; color:white;">Edit profile</span>
+        </div>
+    </div-->
+
+    <div ng-show="bAction">
+      <div style="padding:10px 20px; border-bottom: 1px solid #999; color: #1b1b1b;">
+        <h4 style="padding:0px;">About</h4>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh nisl, tincidunt eu tortor vel, cursus pretium risus. Fusce a sagittis arcu. Quisque ac massa sed nulla cursus sagittis a fermentum felis. Cras nec finibus justo. Quisque viverra, mauris eget auctor congue, diam ante condimentum eros, sed pharetra erat lorem sed metus.
+        </div>
+      </div>
+
+      <div style="padding:10px 20px; color: #1b1b1b;">
+        <h4 style="margin:0px;">Reviews</h4>
+      </div>
+      <div style="padding:20px; background:white;">
+        <div class="row">
+          <div class="col col-50"><strong>Name of reviewer</strong></div>
+          <div clsss="col col-50"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+        </div>
+        <div class="row">
+          We have captured thousands of screenshots from multiple platforms. 
+        </div>
+      </div>
+      
+      <div style="padding:20px;">
+        <div class="row">
+          <div class="col col-50"><strong>Name of reviewer</strong></div>
+          <div clsss="col col-50"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+        </div>
+        <div class="row">
+          We have captured thousands of screenshots from multiple platforms, curated hundreds of articles and provide them to you for free on our website. Our focus is to keep improving our website—and that’s where you can help us. 
+        </div>
+      </div>
+
+      <div style="padding:20px; background:white;">
+        <div class="row">
+          <div class="col col-50"><strong>Name of reviewer</strong></div>
+          <div clsss="col col-50"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+        </div>
+        <div class="row">
+          We have captured thousands of screenshots from multiple platforms. 
+        </div>
+      </div>
+      
+      <div style="padding:20px;">
+        <div class="row">
+          <div class="col col-50"><strong>Name of reviewer</strong></div>
+          <div clsss="col col-50"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+        </div>
+        <div class="row">
+          We have captured thousands of screenshots from multiple platforms, curated hundreds of articles and provide them to you for free on our website. Our focus is to keep improving our website—and that’s where you can help us.
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="!bAction">
+      <div style="padding: 10px 20px; background-color:#fff; color:#5b5b5b; border-top: 1px solid #5b5b5b;">
+        VERIFICATIONS:
+      </div>
+
+      <div class="row" style="padding: 22px;">
+        <div class="col col-4" style="text-align:center;">
+          <i class="icon ion-ios-telephone" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 10px; color:#bbbbbb;"></i>
+        </div>
+
+        <div class="col col-4" style="text-align:center;">
+          <i class="icon ion-android-mail" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 7px; color:#fff; background-color:#2bde73;"></i>
+        </div>
+
+        <div class="col col-4" style="text-align:center;">
+          <i class="icon ion-social-facebook" style="border: 1px solid #d6d6d6; border-radius: 50%; font-size: 2em; padding: 3px 14px; color:#bbbbbb;"></i>
+        </div>
+      </div>
+
+      <div style="padding: 10px 20px; background-color:#fff; color:#5b5b5b; border-top: 1px solid #5b5b5b;">
+        MARKATE ACTIVITY:
+      </div>
+
+      <div class="" style="padding: 5px 20px;">
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Requests</strong></span>
+          <span style="">4</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Job Order</strong></span>
+          <span style="">0 - Completed</span>
+        </div>
+      </div>
+
+      <div style="padding: 10px 20px; background-color:#fff; color:#5b5b5b; border-top: 1px solid #5b5b5b;">
+        DETAILED INFORMATION:
+      </div>
+
+      <div class="" style="padding: 5px 20px;">
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Name:</strong></span>
+          <span style="">Alie Heng.</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Location</strong></span>
+          <span style="">Haarlem, Noord-Holland</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Rating</strong></span>
+          <span style="">No reviews yet</span>
+        </div>
+
+        <div style="text-align:right; width:100%; border-bottom:1px solid #d6d6d6; padding: 5px 20px;">
+          <span style="float:left;"><strong>Member since</strong></span>
+          <span style="">29 Mar 2015</span>
+        </div>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

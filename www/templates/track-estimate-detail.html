@@ -1,0 +1,41 @@
+<ion-view class="track_estimate_detail_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Estimate no #
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-content class="">
+    <div style="text-align:center; padding :10px;">
+      <img src="img/estimate_print.png" style="width:100%; height:auto; margin-left:5px;" />
+    </div>
+  </ion-content>
+
+  <div class="bottom_bar">
+    <div class="row">
+      <button class="button button-block btnConfirm" ng-click="goConfirm()">
+        CONFIRM ESTIMATE AND HIRE
+      </button>
+    </div>
+
+    <div class="row">
+      <ion-checkbox ng-model="confirm" class="chbConfirm" ng-checked="confirm">
+        By signing you agree with our <br /> <font style="color:#2bde72;">Terms of Use</font> and <font style="color:#2bde72;">Privacy Policy</font>
+      </ion-checkbox>
+    </div>
+
+  </div>
+
+</ion-view>
+
+
+
+
+

@@ -1,0 +1,42 @@
+<ion-view class="signup_page">
+  <ion-header-bar class="header_bar">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <!--div class="h1 title">
+      Login
+    </div-->
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+	
+  </ion-header-bar>
+
+  <ion-content style="" scroll="false">
+  	<div class="row">
+  		<div class="button btnFacebook button-block" ng-click="goFacebook()">
+  			Login with Facebook
+  			<i class="icon facebook"></i>
+  		</div>
+  	</div>
+
+  	<div class="row" style="margin-top: 10px;">
+  		<div class="button btnGoogle button-block" ng-click="goGoogle()">
+  			Login with Google
+  			<i class="icon google"></i>
+  		</div>
+  	</div>
+
+  	<div class="row" style="margin-top: 40px; font-size: 15px; font-weight:bold; padding: 2px;">
+  		EMAIL SIGN UP
+  	</div>
+
+  	<div class="row" style="margin-top: 5px;">
+  		<div class="button btnEmail button-block" ng-click="goEmail()">
+  			<i class="icon email"></i>
+  			Email
+  		</div>
+  	</div>
+
+  </ion-content>
+</ion-view>

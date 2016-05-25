@@ -1,0 +1,93 @@
+<ion-view class="deal_list_view">
+  <ion-header-bar class="header_bar dark">
+    <button class="button button-icon button-clear icon ion-chevron-left" id="btnBack" ng-click="goBack()">
+    </button>
+
+    <div class="title">
+      Deals
+    </div>
+
+    <!--button class="button button-icon button-clear ion-ios-gear-outline pull-right" id="btnSetting" ng-click="goSetting()">
+    </button-->
+  
+  </ion-header-bar>
+
+  <ion-header-bar class="bar-light bar-subheader">
+
+      <label class="item item-input">
+        <i class="icon ion-ios-location placeholder-icon"></i>
+        <input type="text" class="search_service" ng-model="service" placeholder="Search Service">
+      </label>
+
+      <label class="item item-input" style="margin-top:5px;">
+        <i class="icon ion-ios-location placeholder-icon"></i>
+        <input type="text" class="search_area" ng-model="area" placeholder="Search Area">
+      </label>
+
+      <div class="search_option">
+        <!--label for="location_option">Location</label>
+        <ion-checkbox class="checkbox-square" ng-model="filter.location"></ion-checkbox>
+        <label for="sort_option">Sort by</label>
+        <ion-checkbox class="checkbox-square" ng-model="filter.sort"></ion-checkbox-->
+        <span for="location">Location</span>
+        <input type="checkbox" class="checkbox-dark" name="location" value="" ng-model="filter.location"></input>
+        <span for="sort">Sort by</span>
+        <input type="checkbox" class="checkbox-dark" name="sort" value="" ng-model="filter.sort"></input>
+
+      </div>
+
+      <div class="search_result">
+        We found  <strong>3 Deals</strong> according to your search options
+      </div>
+
+  </ion-header-bar>
+
+  <ion-content class="padding">
+
+    <div class="list card deal_card" ng-repeat="deal in search_deals">
+      <a href="#/deal_detail/{{$index}}">
+        <div class="item item-avatar">
+          <img ng-src="{{deal.pro_url}}" class="job_pic">
+          <h2>{{deal.pro_name}}</h2>
+
+          <div>
+            <img ng-src="{{deal.job_url}}" class="pro_pic">
+            <p class="pro_name">{{deal.job_title}}</p>
+          </div>
+
+          <div class="deal_price">
+            $ {{deal.price}}
+          </div>
+        </div>
+
+        <div class="item item-footer">
+          <div class="row">
+            <div class="col col-33">
+              <div>Expires in:</div>
+              <div><strong>{{deal.duration}} days</strong></div>
+            </div>
+
+            <div class="col col-33">
+              <div>Value:</div>
+              <div><strong class="deal_save_price">$ {{deal.value}}</strong></div>
+            </div>
+
+            <div class="col col-33">
+              <div>Expires in:</div>
+              <div><strong>$ {{deal.save}}</strong></div>              
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
+
+
+
+
+
+

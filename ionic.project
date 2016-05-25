@@ -1,0 +1,14 @@
+{
+  "name": "markate",
+  "app_id": "a6cad19e",
+  "proxies": [
+    {
+      "path": "/login",
+      "proxyUrl": "http://stg.markate.com/api/v2/customer/login"
+    },
+    {
+      "path": "/register",
+      "proxyUrl": "http://stg.markate.com/api/v2/customer/register"
+    }
+  ]
+}
